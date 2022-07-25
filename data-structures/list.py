@@ -28,7 +28,7 @@ class LinkedList :
             currNode.pointer = False
             
     def getByIndex(self, index):
-        if(type(index) != int):
+        if(type(index) != int or index < 1):
             return False
         
         cont = 1
@@ -59,12 +59,6 @@ class Node :
             print({'value': self.value, 'pointer': self.pointer.value})
         else :
             print({'value': self.value, 'pointer': self.pointer})
-        
-        
-    
-
-
-
 
 listNodes = [Node(1)]
 lista = LinkedList(listNodes[0])
@@ -74,20 +68,11 @@ for current in range(2,100):
     listNodes.append(no)
     lista.addNode(no)
     
-# lista.removeNode(listNodes[2])
-# lista.removeNode()
-# lista.removeNode()
-print(listNodes[0] ==  listNodes[0])
-# listNodes[0].print()
-
-node = lista.getByIndex(0)
-node.print()
-print(type(listNodes[0]) == Node)
-# lista.removeNode(listNodes[0])
-# lista.printList()
-# 
-# print(no1.value)
-# lista.node.print()
+node = lista.getByIndex(1)
+if (bool(node)):
+    node.print()
+else:
+    print(node)
 
 
 

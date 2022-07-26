@@ -6,7 +6,7 @@ class BinaryTree :
         if(type(leaf) != Leaf):
             return False
         
-        currLeave = self.root
+        currLeaf = self.root
         while bool(currLeaf.previous) or bool(currLeaf.next) :
             if currLeaf.value > leaf.value :
                 currLeaf = currLeaf.previous

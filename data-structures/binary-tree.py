@@ -2,28 +2,21 @@ class BinaryTree :
     def __init__(self, root):
         self.root = root
     
-    def addNode(self, node):
-        if(type(node) != Node):
+    def addNode(self, leaf):
+        if(type(leaf) != Leaf):
             return False
         
-        currNode = self.root
-        while bool(currNode.previous) or bool(currNode.next) :
-            if currNode.value > node.value :
-                currNode = currNode.previous
+        currLeave = self.root
+        while bool(currLeaf.previous) or bool(currLeaf.next) :
+            if currLeaf.value > leaf.value :
+                currLeaf = currLeaf.previous
             else :
-                currNode = currNode.next 
-        
-        
-                
+                currLeaf = currLeaf.next 
         
     def print(self):
         print({'root':self.root.value, 'previous' : self.root.previous, 'next': self.root.next})
         
-        
-        
-
-
-class Node:
+class Leaf:
     def __init__(self, value):
         self.value = value
         self.previous = False
@@ -33,9 +26,9 @@ class Node:
         print({'value' : self.value, 'previous' : self.previous, 'next' : self.next}) 
         
 
-node1 = Node(10)
+leaf1 = Leaf(10)
 
-tree = BinaryTree(node1)
+tree = BinaryTree(leaf1)
 
-node1.print()
+leaf1.print()
 tree.print()

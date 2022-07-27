@@ -1,0 +1,41 @@
+{
+    "value":"50",
+    "rigth":{
+        "value" :"55",
+        "right" : {
+            "value" : "70",
+            "right" : {
+                "value":"80",
+                "right":false,
+                "left":false
+            },
+            "left": {
+                "value" : "60",
+                "right":{
+                    "value":"69",
+                    "right":false,
+                    "left": false
+                },
+                "left":false
+            }
+        },
+        "left": false
+    },
+    "left":{
+        "value":"40",
+        "rigth":{
+            "value":"45",
+            "rigth":false,
+            "left":false
+        },
+        "left":{
+            "value":"30",
+            "right":{
+                "value":"35",
+                "right":false,
+                "left" : false
+            },
+            "left" : false
+        }
+    } 
+}

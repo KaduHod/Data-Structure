@@ -1,3 +1,41 @@
 {
-    "Lenguage" : "Python"
+    "value": 50, 
+    "right": {
+        "value": 55, 
+        "right": {
+            "value": 70, 
+            "right": {
+                "value": 80, 
+                "right": false, 
+                "left" : false
+            }, 
+            "left": {
+                "value": 60, 
+                "right": {
+                    "value": 69,
+                    "right": false,
+                    "left" : false
+                }, 
+                "left": false
+            }
+        }, 
+        "left": false
+    }, 
+    "left": {
+        "value": 40,
+        "right": {
+            "value": 45,
+            "right": false,
+            "left" : false
+        }, 
+        "left": {
+            "value": 30, 
+            "right": {
+                "value": 35, 
+                "right": false, 
+                "left" : false
+            }, 
+            "left": false
+        }
+    }
 }
